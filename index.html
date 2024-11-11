@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Business Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&family=Just+Another+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <!-- dont forget to add a css file and link it here! -->
+  </head>
+
+  <body>
+    <div class="hero-section">
+      <h1> EMA Cake Fusion </h1>
+      <p>Enjoy the best cakes in town!</p>
+    </div>
+
+    <div class="form-container">
+      <form action=" https://httpbin.org/post" method="post">
+        <div class="banner">
+          <h1>Design Your Marvelous Cake</h1>
+        </div>
+
+        <div class="cake-form">
+          <label>
+            Name:
+            <input
+              type="text"
+              name="name"
+              required
+              placeholder="First and Last Name"
+            />
+          </label>
+        </div>
+        <!-- Telephone Input -->
+
+        <div class="cake-form">
+          <label>
+            Phone number:
+            <input
+              type="tel"
+              name="telephone"
+              placeholder="### ### ### ###"
+              required
+            />
+          </label>
+        </div>
+
+        <!-- Radio Input -->
+        <div class="cake-form">
+          <label>Cake size (slices):</label>
+
+          <div class="radio-button-line">
+            <label class="radio-option">
+              6-8
+              <input type="radio" name="cake-size" value="6-8" />
+            </label>
+
+          <label class="radio-option">
+            9-15
+            <input type="radio" name="cake-size" value="9-15" />
+          </label>
+
+          <label class="radio-option">
+            16-20
+            <input type="radio" name="cake-size" value="16-20" />
+          </label>
+        </div>
+
+        <!-- Select Input -->
+        <div class="cake-form">
+          <label
+            >Choose your flavour:
+            <select name="cake-taste">
+              <option disabled selected>Flavour</option>
+              <option value="chocolate">Chocolate</option>
+              <option value="vanilla">Vanilla</option>
+              <option value="strawberry">Strawberry</option>
+              <option value="lemon">Lemon</option>
+            </select>
+          </label>
+        </div>
+
+        <!-- Checkbox Input -->
+
+        <div class="cake-form">
+          <p class="title">Toppings:</p>
+          <div class="checkbox-option">
+            <label
+              >Sprinkles
+              <input type="checkbox" name="toppings" value="mat" />
+            </label>
+            <label
+              >Fresh Fruit
+              <input type="checkbox" name="toppings" value="mat" />
+            </label>
+            <label
+              >Ganache
+              <input type="checkbox" name="toppings" value="mat" />
+            </label>
+          </div>
+        </div>
+
+        <div class="cake-form" class="text-area">
+          <label
+            >Additional Comments:
+            <textarea name="additionalComments" cols="30" rows="10"></textarea>
+          </label>
+        </div>
+
+        <button type="submit">Order</button>
+      </form>
+    </div>
+
+    <!-- Signup form -->
+  </body>
+</html>
