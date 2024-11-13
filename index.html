@@ -16,12 +16,14 @@
 
   <body>
     <div class="hero-section">
-      <h1>EMA Cake Fusion</h1>
-      <p>Enjoy the best cakes in town!</p>
+      <div class="hero-text">
+        <h1>EMA Cake Fusion</h1>
+        <p>Enjoy the best cakes in town!</p>
+      </div>
     </div>
 
     <div class="form-container">
-      <form action=" https://httpbin.org/post" method="post">
+      <form action=" https://httpbin.org/anything" method="post">
         <div class="form-title">
           <h1>Design Your Marvelous Cake</h1>
         </div>
@@ -107,35 +109,43 @@
         <!-- Checkbox Input -->
 
         <div class="cake-form">
-          <label class="title">Toppings:</label>
-          <div class="checkbox-option">
-            <label
-              >Sprinkles
-              <input
-                type="checkbox"
-                id="toppings-sprinkles"
-                name="toppings"
-                value="sprinkles"
-              />
-            </label>
-            <label
-              >Fresh Fruits
-              <input
-                type="checkbox"
-                id="toppings-fresh-fruits"
-                name="toppings"
-                value="fresh-fruit"
-              />
-            </label>
-            <label
-              >Ganache
-              <input
-                type="checkbox"
-                id="toppings-ganache"
-                name="toppings"
-                value="ganache"
-              />
-            </label>
+          <label>Toppings:</label>
+          <div class="toppings-container">
+            <div class="checkbox-option">
+              <label>
+                <input
+                  type="checkbox"
+                  id="toppings-sprinkles"
+                  name="toppings"
+                  value="sprinkles"
+                />
+                Sprinkles
+              </label>
+            </div>
+
+            <div class="checkbox-option">
+              <label>
+                <input
+                  type="checkbox"
+                  id="toppings-fresh-fruits"
+                  name="toppings"
+                  value="fresh-fruit"
+                />
+                Fresh Fruits
+              </label>
+            </div>
+
+            <div class="checkbox-option">
+              <label>
+                <input
+                  type="checkbox"
+                  id="toppings-ganache"
+                  name="toppings"
+                  value="ganache"
+                />
+                Ganache
+              </label>
+            </div>
           </div>
         </div>
 
