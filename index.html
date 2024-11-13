@@ -16,13 +16,13 @@
 
   <body>
     <div class="hero-section">
-      <h1> EMA Cake Fusion </h1>
+      <h1>EMA Cake Fusion</h1>
       <p>Enjoy the best cakes in town!</p>
     </div>
 
     <div class="form-container">
       <form action=" https://httpbin.org/post" method="post">
-        <div class="banner">
+        <div class="form-title">
           <h1>Design Your Marvelous Cake</h1>
         </div>
 
@@ -32,6 +32,7 @@
             <input
               type="text"
               name="name"
+              id="name"
               required
               placeholder="First and Last Name"
             />
@@ -45,6 +46,7 @@
             <input
               type="tel"
               name="telephone"
+              id="telephone"
               placeholder="### ### ### ###"
               required
             />
@@ -58,25 +60,41 @@
           <div class="radio-button-line">
             <label class="radio-option">
               6-8
-              <input type="radio" name="cake-size" value="6-8" />
+              <input
+                type="radio"
+                id="cake-size-6-8"
+                name="cake-size"
+                value="6-8"
+              />
             </label>
 
-          <label class="radio-option">
-            9-15
-            <input type="radio" name="cake-size" value="9-15" />
-          </label>
+            <label class="radio-option">
+              9-15
+              <input
+                type="radio"
+                id="cake-size-9-15"
+                name="cake-size"
+                value="9-15"
+              />
+            </label>
 
-          <label class="radio-option">
-            16-20
-            <input type="radio" name="cake-size" value="16-20" />
-          </label>
+            <label class="radio-option">
+              16-20
+              <input
+                type="radio"
+                id="cake-size-16-20"
+                name="cake-size"
+                value="16-20"
+              />
+            </label>
+          </div>
         </div>
 
         <!-- Select Input -->
         <div class="cake-form">
           <label
             >Choose your flavour:
-            <select name="cake-taste">
+            <select name="cake-taste" id="cake-taste">
               <option disabled selected>Flavour</option>
               <option value="chocolate">Chocolate</option>
               <option value="vanilla">Vanilla</option>
@@ -89,34 +107,55 @@
         <!-- Checkbox Input -->
 
         <div class="cake-form">
-          <p class="title">Toppings:</p>
+          <label class="title">Toppings:</label>
           <div class="checkbox-option">
             <label
               >Sprinkles
-              <input type="checkbox" name="toppings" value="mat" />
+              <input
+                type="checkbox"
+                id="toppings-sprinkles"
+                name="toppings"
+                value="sprinkles"
+              />
             </label>
             <label
-              >Fresh Fruit
-              <input type="checkbox" name="toppings" value="mat" />
+              >Fresh Fruits
+              <input
+                type="checkbox"
+                id="toppings-fresh-fruits"
+                name="toppings"
+                value="fresh-fruit"
+              />
             </label>
             <label
               >Ganache
-              <input type="checkbox" name="toppings" value="mat" />
+              <input
+                type="checkbox"
+                id="toppings-ganache"
+                name="toppings"
+                value="ganache"
+              />
             </label>
           </div>
         </div>
 
-        <div class="cake-form" class="text-area">
+        <div class="cake-form">
           <label
             >Additional Comments:
-            <textarea name="additionalComments" cols="30" rows="10"></textarea>
+            <textarea
+              name="additionalComments"
+              cols="30"
+              rows="10"
+              placeholder="Enter your custom message"
+            ></textarea>
           </label>
         </div>
 
         <button type="submit">Order</button>
       </form>
     </div>
-
-    <!-- Signup form -->
+    <footer class="site-footer">
+      <p>&copy; 2024 EMA Cake Fusion. All rights reserved.</p>
+    </footer>
   </body>
 </html>
